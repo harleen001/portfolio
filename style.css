@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    background: #eee;
+    background: white;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -41,7 +41,7 @@ margin-top: 500px;
     height: 300px;
     width: 300px;
     margin-left: -50%;
-    margin-top: -50%;
+    margin-top: -30%;
 }
 #fourthimage{
     width: 300px;
@@ -82,7 +82,7 @@ margin-left: -45%;
     margin-top: -20%;
 }
 #thirdhead{
-    margin-top: 30%;
+    margin-top: 45%;
     margin-left: -12%;
 }
 #firstsection{
@@ -102,7 +102,7 @@ margin-left: -45%;
     padding-bottom: 0px;
 }
 #sectionthree{
-    margin-top: -8%;
+    margin-top: -15%;
     
 }
 .image{
@@ -119,13 +119,18 @@ margin-left: -45%;
 #fourthsection{
     width: 200px;
     
-    margin-top: -100%;
+    margin-top: -70%;
     margin-left: -10%;
 }
 #fourthpara{
     margin-right: 400px;
 }
-
+#sectionfive{
+    margin-top: 0.5%;
+}
+#fourthheading1{
+    margin-top: -90%;
+}
 
 
 }
