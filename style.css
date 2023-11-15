@@ -51,6 +51,7 @@ margin-top: 500px;
 #fifthimage{
     width: 300px;
     height: 300px;
+    margin-top: 15%;
 margin-left: -45%;
 }
 #skillsbox{
@@ -300,6 +301,12 @@ a:link{text-decoration:none}
   left:0
 }
 
+.r2 a:before{
+    content:"\f03c";
+}
+.r3 a:before{
+    content:"\f01c";
+}
 .vn-red a:hover{
   background:#2c3e50;
 }
@@ -321,5 +328,15 @@ a:link{text-decoration:none}
 }
 #fourthtext{
     margin-top: -120%;
+}
+#secondvn{
+    margin-left: -30%;
+}
+.r3{
+   text-align: center !important;
+}
+.apple_watch{
+    padding-top: 30%;
+    margin-top: 0%;
 }
 }
