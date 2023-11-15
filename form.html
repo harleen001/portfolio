@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Google Fonts - Inconsolata -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff; /* Light text color */
+        }
+
+        h1 {
+            color: #3498db; /* Header color - a shade of blue */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #2c3e50; /* Darker background for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* A darker shadow */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #ecf0f1; /* Light text color for labels */
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            background-color: #34495e; /* Darker input background */
+            color: #ecf0f1; /* Lighter text color */
+            border: none;
+            border-bottom: 2px solid #2c3e50;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-bottom-color 0.5s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-bottom-color: #3498db; /* Border color on focus - a shade of blue */
+        }
+
+        textarea {
+            resize: none;
+            overflow-y: hidden;
+        }
+
+        .line-animation {
+            position: relative;
+            width: 0;
+            height: 2px;
+            background-color: #3498db; /* Line color - a shade of blue */
+            transition: width 0.5s ease;
+        }
+
+        input:focus + .line-animation,
+        textarea:focus + .line-animation {
+            width: 100%;
+        }
+
+        button {
+            background-color: #3498db; /* Button color - a shade of blue */
+            color: #ffffff; /* Light text color */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Say Hi! I'm a Text Away. <img style="width: 45px; margin-top: -0.5%;" src="images/emoji.png" alt="Custom Emoji"></h1>
+    <br>
+    <form action="https://formspree.io/f/mbjveokl" method="POST">
+        <div class="form-group">
+            <label for="name">NAME :</label>
+            <input type="text" name="name" required>
+            <div class="line-animation"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">EMAIL :</label>
+            <input type="email" name="email" required>
+            <div class="line-animation"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">MESSAGE :</label>
+            <textarea name="message" class="resizable-textarea" required></textarea>
+            <div class="line-animation"></div>
+        </div>
+
+        <div class="text-center"> <!-- Center the button only -->
+            <button type="submit" class="btn btn-primary">DROP A TEXT</button>
+        </div>
+    </form>
+
+    <!-- Bootstrap JS and jQuery (for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
