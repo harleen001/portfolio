@@ -1,0 +1,365 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <title>Harleen Singh | Projects</title>
+    <link rel="icon"href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+
+    /**************
+    Globals
+***************/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,600');
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 20px;
+}
+
+
+/**************
+    Splash
+***************/
+
+#splash {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#splash header {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#splash header *:hover {
+    cursor: default;
+}
+
+.title.is-1 {
+    letter-spacing: 6px;
+}
+
+.title-lines {
+    width: 0;
+    margin: 0;
+}
+
+.title-lines:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.title-lines:last-of-type {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle.is-3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+
+
+/**************
+    Gallery
+***************/
+
+#gallery {
+    padding-top: 10%
+}
+
+.image-node {
+    width: 1064px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.image.is-256x256 {
+    padding: 5px;
+}
+
+.hover-layer {
+    color: white;
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tags {
+    opacity: 0;
+}
+
+.tag {
+    margin: 5px;
+}
+
+
+
+/**********************
+    Responsivity, if that word exists, maybe it's responsiveness. Maybe neither.
+**********************/
+
+@media screen and (max-width: 550px) {
+    .image-node {
+        width: 264px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 803px) {
+    .image-node {
+        width: 532px;
+    }
+}
+
+@media screen and (min-width: 804px) and (max-width: 1063px) {
+    .image-node {
+        width: 798px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .title.is-1 {
+        font-size: 2rem;
+    }
+    .subtitle.is-3 span {
+        font-size: 1.5rem;
+    }
+    #splash header {
+        width: 90%;
+    }
+}
+   </style>
+</head>
+
+<body>
+    <section id="splash">
+        <header>
+            <hr class="title-lines">
+            <h1 class="title is-1 is-marginless">Harleen Singh</h1>
+            <hr class="title-lines">
+            <h3 class="subtitle is-3">
+                <span>back-end</span>
+                <span>| Design and Development</span>
+                <span>| Front-end</span>
+                <span>| APIs & microservices</span>
+            </h3>
+        </header>
+        <div class="scroll-button" id="arrow-button">
+         
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="image-node">
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer" target="_blank">
+                    <div class="tags">
+                        <span class="tag">Portfolio</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Bootstrap5</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Swiper CSS</span>
+                        <span class="tag">Formspree</span>
+                    </div>
+                </a>
+                <img src="images/project1.png">
+            </figure>
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer">
+                    <div class="tags">
+                        <span class="tag">Campus Website</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Bootstrap5</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">JQuery</span>
+                        <span class="tag">Material UI</span>
+                        <span class="tag">JS Libraries</span>
+                        <span class="tag">Testing</span>
+                        <span class="tag">Deployment</span>
+                    </div>
+                </a>
+                <img src="images/project2.png">
+            </figure>
+         
+            <figure class="image is-256x256">
+                <a href="#" href="_blank" class="hover-layer">
+                    <div class="tags">
+                        <span class="tag">Open Source</span>
+                        <span class="tag">Library</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Object Oriented</span>
+                        <span class="tag">MIT LICENSED</span>
+                        <span class="tag">Web Dev</span>
+                    </div>
+                </a>
+                <img src="images/project3.png">
+            </figure>
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer" target="_blank">
+                    <div class="tags">
+                        <span class="tag">3D Model</span>
+                        <span class="tag">Blender</span>
+                        <span class="tag">Physics</span>
+                        <span class="tag">Spline</span>
+                        <span class="tag">UI Design</span>
+                        <span class="tag">Perspective</span>
+                    </div>
+                </a>
+                <img src="images/project4.png">
+            </figure>
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer">
+                    <div class="tags">
+                        <span class="tag">E-Commerce</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">RWD</span>
+                        <span class="tag">Formspree</span>
+                    </div>
+                </a>
+                <img src="images/project5.png">
+            </figure>
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer">
+                    <div class="tags">
+                       <!-- <span class="tag">D3.JS</span> -->
+                    </div>
+                </a>
+                <img src="images/comingsoon.png">
+            </figure>
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer">
+                    <div class="tags">
+                       <!-- <span class="tag">D3.JS</span> -->
+                    </div>
+                </a>
+                <img src="images/comingsoon.png">
+            </figure>
+            <figure class="image is-256x256">
+                <a href="#" target="_blank" class="hover-layer">
+                    <div class="tags">
+                         <!-- <span class="tag">D3.JS</span> -->
+                    </div>
+                </a>
+                <img src="images/comingsoon.png">
+            </figure>
+        </div>
+
+    </section>
+</body>
+<script>
+
+ready(() => {
+
+animate_title();
+animate_arrow();
+animate_gallery_layer();
+
+});
+
+function animate_gallery_layer() {
+let gallery = document.getElementsByClassName("image-node")[0].children;
+
+for (let figure of gallery) {
+
+    let hover_layer = figure.children[0];
+    let tags = hover_layer.children[0];
+    let from = {backgroundColor: "rgba(0,0,0,0.5)"};
+    let to = { backgroundColor: "rgba(0,0,0,0.0)"};
+    let clickCount = 0;
+
+    figure.addEventListener("click", () => {
+        TweenLite.to(hover_layer, 0.3, from);
+    });
+
+    figure.addEventListener("mouseover", () => {
+        TweenLite.to(hover_layer, 0.3, from);
+        TweenLite.to(tags, 0.3, { opacity: 1 });
+    });
+    figure.addEventListener("mouseout", () => {
+        TweenLite.to(hover_layer, 0.3, to);
+        TweenLite.to(tags, 0.3, { opacity: 0 });
+    });
+}
+
+}
+
+function animate_title() {
+let title_lines = document.getElementsByClassName("title-lines");
+for (let line of title_lines) {
+    TweenLite.to(line, 5, { width: "100%" });
+}
+}
+
+function animate_arrow() {
+let timeline = new TimelineMax({ repeat: -1 });
+let arrow = document.getElementById("arrow-button");
+
+timeline.add(TweenLite.to(arrow, 0.5, { bottom: "1rem", ease: Power0.easeNone }));
+timeline.add(TweenLite.to(arrow, 0.5, { bottom: "2rem", ease: Power0.easeNone }));
+scroll_arrow();
+}
+
+function scroll_arrow() {
+let arrow = document.getElementById("arrow-button");
+arrow.addEventListener("click", () => {
+    TweenLite.to(window, 1.5, { scrollTo: "#gallery" });
+})
+
+}
+
+function get_css_property(element, property) {
+let sheet = window.getComputedStyle(element);
+return sheet.getPropertyValue(property);
+}
+
+function ready(fn) {
+if (document.readyState != 'loading') {
+    fn();
+} else {
+    document.addEventListener('DOMContentLoaded', fn);
+}
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+
+</html>
