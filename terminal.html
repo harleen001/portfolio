@@ -191,13 +191,20 @@ button{
             <div class="content" onclick="document.getElementById('code').focus();">
               <ul id="message" class="scrollbar"></ul>
               <span class="encart">harleensingh -> </span>
-              <input type="text" onKeyPress="if(event.keyCode == 13) capture();"  id="code" autocomplete = "off">
+              <input type="text" onkeydown="handleKeyPress(event)" id="code" autocomplete="off">
+
             </div>
           </section>
         </button>
       </section> 
       <script >
-
+function handleKeyPress(event) {
+    if (event.keyCode === 13 ) {
+        event.preventDefault();
+        capture(); // Call your capture function here for Enter (keyCode 13) or space (keyCode 32)
+        return false;
+    }
+}
 var message = document.getElementById("message"),
     insert = document.getElementById("code"),
     terminal = document.getElementById("terminal"),
