@@ -27,6 +27,11 @@ body {
 }
 
 @media screen and (min-width: 100px) and (max-width:600px){
+
+    #skillsbox img{
+        height: 50px !important;
+        width: 50px !important; 
+    }
     .cursor, .cursor2 {
         display: none;
     }
