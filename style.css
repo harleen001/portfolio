@@ -28,6 +28,10 @@ body {
 
 @media screen and (min-width: 100px) and (max-width:600px){
 
+    .text > .title {
+        
+        margin-bottom: 20px;
+    }
     #skillsbox img{
         height: 50px !important;
         width: 50px !important; 
@@ -43,6 +47,7 @@ margin-top: 500px;
 #secondimage{
     height: 300px;
     width: 300px;
+   
 }
 #firstimage{
     height: 300px;
@@ -326,12 +331,22 @@ a:link{text-decoration:none}
     width: 420px;
 }
 
-
+#thirdsection{
+    margin-right: 6%;
+}
 @media screen and (min-width: 100px) and (max-width:600px){
 
-
+   
+   #thirdpara{
+    margin-left: -20%;
+    font-size: 17px;
+    
+   }
+    #thirdsection{
+        margin-right: 2%;
+    }
 #fourthpara, #thirdpara,#fourthtext{
-    width: 300px;
+    width: 390px;
 }
 #lastoffour{
     width: 300px;
