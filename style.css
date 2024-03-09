@@ -96,7 +96,7 @@ margin-left: -45%;
     
 }
 #firstpara{
-
+    text-align: justify;
     margin-top: -20%;
 }
 #thirdhead{
@@ -336,6 +336,7 @@ a:link{text-decoration:none}
 }
 
 #thirdsection{
+    text-align: justify !important;
     margin-right: 6%;
 }
 @media screen and (min-width: 100px) and (max-width:600px){
@@ -352,6 +353,7 @@ a:link{text-decoration:none}
    }
     #thirdsection{
         margin-right: 2%;
+        text-align: justify !important;
     }
 #fourthpara, #thirdpara,#fourthtext{
     width: 390px;
