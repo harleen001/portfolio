@@ -133,9 +133,11 @@ margin-left: -45%;
 }
 #firsttitle, #secondheading, #thirdhead, #fourthhead{
     font-size: 50px;
-    justify-content: center;
+    
 }
-
+#secondheading{
+    margin-left: 15%;
+}
 #fourthsection{
     width: 200px;
     
